@@ -1,0 +1,51 @@
+
+
+<div class="container">
+  <h2>location-form works!</h2>
+
+  <form [formGroup]="form">
+    <div class="mb-2">
+      <label for="locationInput" class="form-label">Location</label>
+      <input id="locationInput" class="form-control" type="text" formControlName="location">
+    </div>
+
+
+
+    <!-- Other form fields go here, e.g ---------------------------------------------------------------->
+    <div class="mb-2">
+      <label for="countryInput" class="form-label">Country</label>
+      <input id="countryInput" class="form-control" type="text" formControlName="country">
+    </div>
+
+    <div class="mb-2">
+      <label for="regionInput" class="form-label">Region</label>
+      <input id="regionInput" class="form-control" type="text" formControlName="region">
+    </div>
+
+    <div class="mb-2">
+      <label for="districtInput" class="form-label">District</label>
+      <input id="districtInput" class="form-control" type="text" formControlName="district">
+    </div>
+
+    <div class="mb-2">
+      <label for="roadInput" class="form-label">Road/Street</label>
+      <input id="roadInput" class="form-control" type="text" formControlName="road">
+    </div>
+
+    <div class="mb-2">
+      <label for="apartmentInput" class="form-label">Apartment/Suite/Plot</label>
+      <input id="apartmentInput" class="form-control" type="text" formControlName="apartment">
+    </div>
+
+
+    <div class="mb-2">
+      <label for="zipInput" class="form-label">Zip/Box Number (Optional)</label>
+      <input id="zipInput" class="form-control" type="text" formControlName="zip">
+    </div>
+
+<div class="mb-2">
+  <button type="submit" class="btn btn-dark">Submit</button>
+</div>
+
+  </form>
+</div>
