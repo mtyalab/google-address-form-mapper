@@ -1,27 +1,54 @@
-# GoogleAddressFormMapper
+## Angular Google Maps Example
+This is an example Angular application that demonstrates how to use Google Maps API to display a map and implement address autocomplete functionality.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+## Prerequisites
+Before running this application, you need to have the following installed on your machine:
 
-## Development server
+Node.js (v14.x or higher)
+Angular CLI (v12.x or higher)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Getting Started
+Follow the steps below to run this application locally:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone the repository to your local machine:
 
-## Build
+`git clone https://github.com/your-username/angular-google-maps-example.git`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Change to the project directory:
 
-## Running unit tests
+`cd angular-google-maps-example`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Install dependencies:
 
-## Running end-to-end tests
+`npm install`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4. Replace the Google Maps API key in the src/index.html file with your own API key. You can obtain an API key by following the instructions in the Google Maps JavaScript API documentation.
 
-## Further help
+5. Start the development server:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+6. Open a web browser and navigate to `http://localhost:4200` to view the application.
+
+## Features
+This example Angular application includes the following features:
+
+- Displaying a Google Map using the @agm/core library, which provides Angular components for Google Maps.
+- Implementing an address autocomplete feature using the Google Places Autocomplete API.
+- Extracting address components (e.g., country, region, district, road, etc.) from the selected place and populating a form using Angular's reactive forms approach.
+- Demonstrating how to use the FormData object to prepare data for HTTP POST requests, including file uploads.
+- Showing how to subscribe to map events using the `@agm/core` library's `subscribeToMapEvent` method.
+
+
+## Technologies Used
+
+- Angular (v12.x)
+- TypeScript
+- Google Maps JavaScript API
+- @agm/core library for Angular Google Maps integration
+
+
+## License
+This project is licensed under the MIT License.
+
+## Contributing
+If you'd like to contribute to this project, please fork the repository, create a new branch, and submit a pull request. Contributions are always welcome!
